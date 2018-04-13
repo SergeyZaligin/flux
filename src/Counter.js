@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import flux from 'flux';
+import { Button } from 'react-bootstrap';
 import './Counter.css';
 
 class Counter extends Component {
@@ -9,9 +10,9 @@ class Counter extends Component {
   render() {
     return (
       <div className="App">
-        <button type="button" class="btn btn-large btn-block btn-default">-</button>
+        <Button bsStyle="info">-</Button>
         { 0 }
-        <button type="button" class="btn btn-large btn-block btn-default">+</button>
+        <Button bsStyle="info">+</Button>
       </div>
     );
   }
